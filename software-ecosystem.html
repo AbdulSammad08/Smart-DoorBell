@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Software Ecosystem &amp; Team Collaboration | EcoBell IoT</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1392ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101a22",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .glass-card {
+        background: rgba(35, 57, 72, 0.4);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(146, 178, 201, 0.1);
+      }
+      .hero-glow {
+        background: radial-gradient(circle at 50% 50%, rgba(19, 146, 236, 0.15) 0%, transparent
+              70%);
+      }
+      .tech-line {
+        background: linear-gradient(90deg, transparent, #1392ec, transparent);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300"
+  >
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+      <nav class="nav">
+        <div class="container nav-inner">
+          <a class="logo" href="index.html" style="margin-left: 11%;">
+            <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+            <span>Smart <span style="color: var(--primary); font-size: 25px;">DoorBell</span></span>
+          </a>
+          <div class="nav-links">
+            <a href="product.html">Product</a>
+            <a href="hardware-evolution.html">Hardware Evolution</a>
+            <a href="software-ecosystem.html">Software Evolution</a>
+            <a href="team.html">Team</a>
+            <a href="support.html">Support</a>
+          </div>
+          <div style="display: flex; gap: 10px; margin-right: 11%">
+            <a class="btn-order" href="buy.html">Order Now</a>
+            <a class="btn" href="app-download.html">Download App</a>
+          </div>
+        </div>
+      </nav>
+      <main class="flex-1 flex flex-col max-w-7xl mx-auto w-full px-6 lg:px-10 py-12">
+        <!-- Hero Section -->
+        <section class="relative mb-20 text-center py-12 hero-glow rounded-3xl border border-primary/10">
+          <div class="max-w-3xl mx-auto">
+            <span
+              class="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-4"
+              >Engineering Stack</span
+            >
+            <h1
+              class="text-white text-5xl lg:text-6xl font-black leading-tight tracking-tighter mb-6 font-display"
+            >
+              Software Ecosystem &amp; <br /><span class="text-primary">Team Collaboration</span>
+            </h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+              A unified full-stack architecture developed by our core engineering team to ensure
+              seamless security, connectivity, and real-time monitoring.
+            </p>
+          </div>
+        </section>
+        <!-- Ecosystem Grid -->
+        <section class="mb-24">
+          <div class="flex items-center gap-4 mb-10">
+            <h2 class="text-white text-3xl font-bold font-display">The Software Stack</h2>
+            <div class="h-px grow tech-line opacity-30"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Flutter App -->
+            <div
+              class="glass-card p-8 rounded-xl flex flex-col gap-6 group hover:border-primary/50 transition-all"
+            >
+              <div
+                class="size-14 rounded-lg bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined text-3xl">smartphone</span>
+              </div>
+              <div>
+                <h3 class="text-white text-xl font-bold mb-2">Flutter Mobile App</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                  Cross-platform client with low-latency WebRTC integration for real-time
+                  interaction.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center gap-2 text-xs text-slate-300">
+                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    Real-time Video Streaming
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-slate-300">
+                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    Biometric Door Unlock
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-slate-300">
+                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    Two-way Audio Comms
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-auto flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-background-dark rounded text-[10px] font-bold text-primary uppercase border border-primary/20"
+                  >Flutter</span
+                >
+                <span
+                  class="px-3 py-1 bg-background-dark rounded text-[10px] font-bold text-primary uppercase border border-primary/20"
+                  >Firebase</span
+                >
+              </div>
+            </div>
+            <!-- React Admin Portal -->
+            <div
+              class="glass-card p-8 rounded-xl flex flex-col gap-6 group hover:border-primary/50 transition-all"
+            >
+              <div
+                class="size-14 rounded-lg bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined text-3xl">dashboard</span>
+              </div>
+              <div>
+                <h3 class="text-white text-xl font-bold mb-2">React Admin Portal</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                  Enterprise-grade dashboard for large scale device management and analytics.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center gap-2 text-xs text-slate-300">
+                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    Device Health Monitoring
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-slate-300">
+                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    Multi-user Management
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-slate-300">
+                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    Azure Blob Analytics
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-auto flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-background-dark rounded text-[10px] font-bold text-primary uppercase border border-primary/20"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-background-dark rounded text-[10px] font-bold text-primary uppercase border border-primary/20"
+                  >Azure</span
+                >
+                <span
+                  class="px-3 py-1 bg-background-dark rounded text-[10px] font-bold text-primary uppercase border border-primary/20"
+                  >Node.js</span
+                >
+              </div>
+            </div>
+            <!-- Next.js Website -->
+            <div
+              class="glass-card p-8 rounded-xl flex flex-col gap-6 group hover:border-primary/50 transition-all"
+            >
+              <div
+                class="size-14 rounded-lg bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined text-3xl">public</span>
+              </div>
+              <div>
+                <h3 class="text-white text-xl font-bold mb-2">Next.js Product Site</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                  High-performance SSR landing page optimized for global reach and conversion.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center gap-2 text-xs text-slate-300">
+                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    SEO &amp; Performance Optimized
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-slate-300">
+                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    Tailwind UI System
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-slate-300">
+                    <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    Vercel Edge Deployment
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-auto flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-background-dark rounded text-[10px] font-bold text-primary uppercase border border-primary/20"
+                  >Next.js</span
+                >
+                <span
+                  class="px-3 py-1 bg-background-dark rounded text-[10px] font-bold text-primary uppercase border border-primary/20"
+                  >Vercel</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Team & Contributions -->
+        <section class="py-16">
+          <div class="text-center mb-16">
+            <h2 class="text-white text-4xl font-black font-display mb-4">Unified Contributions</h2>
+            <p class="text-slate-400 max-w-xl mx-auto">
+              Our engineering philosophy is cross-functional. Every team member contributes to the
+              hardware and software layers equally.
+            </p>
+          </div>
+          <!-- Circular Contribution Chart Simulation -->
+          <div class="relative flex justify-center items-center mb-24 min-h-[400px]">
+            <!-- Central Hub -->
+            <div
+              class="absolute z-10 size-32 rounded-full bg-background-dark border-4 border-primary flex items-center justify-center shadow-[0_0_50px_rgba(19,146,236,0.3)]"
+            >
+              <span class="material-symbols-outlined text-5xl text-primary">hub</span>
+            </div>
+            <!-- Floating Tech Nodes -->
+            <!-- IoT -->
+            <div
+              class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
+            >
+              <div class="size-16 rounded-full glass-card border-primary/40 flex items-center justify-center mb-2">
+                <span class="material-symbols-outlined text-primary">memory</span>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-300"
+                >IoT Hardware</span
+              >
+            </div>
+            <!-- App -->
+            <div
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex flex-col items-center"
+            >
+              <div class="size-16 rounded-full glass-card border-primary/40 flex items-center justify-center mb-2">
+                <span class="material-symbols-outlined text-primary">flutter_dash</span>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-300"
+                >Flutter Mobile</span
+              >
+            </div>
+            <!-- Cloud -->
+            <div
+              class="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
+            >
+              <div class="size-16 rounded-full glass-card border-primary/40 flex items-center justify-center mb-2">
+                <span class="material-symbols-outlined text-primary">cloud</span>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-300">Azure Cloud</span>
+            </div>
+            <!-- Backend -->
+            <div
+              class="absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
+            >
+              <div class="size-16 rounded-full glass-card border-primary/40 flex items-center justify-center mb-2">
+                <span class="material-symbols-outlined text-primary">terminal</span>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-300">Node Backend</span>
+            </div>
+            <!-- Connecting Lines (Visual Representation) -->
+            <svg class="absolute w-full h-full pointer-events-none opacity-40" viewBox="0 0 800 400">
+              <circle
+                cx="400"
+                cy="200"
+                fill="none"
+                r="140"
+                stroke="#1392ec"
+                stroke-dasharray="8 8"
+                stroke-width="1"
+              ></circle>
+              <line stroke="#1392ec" stroke-width="2" x1="400" x2="400" y1="200" y2="40"></line>
+              <line stroke="#1392ec" stroke-width="2" x1="400" x2="400" y1="200" y2="360"></line>
+              <line stroke="#1392ec" stroke-width="2" x1="400" x2="200" y1="200" y2="200"></line>
+              <line stroke="#1392ec" stroke-width="2" x1="400" x2="600" y1="200" y2="200"></line>
+            </svg>
+          </div>
+          <!-- Team Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="flex flex-col items-center text-center">
+              <div class="size-24 rounded-full border-2 border-primary/30 p-1 mb-6">
+                <img
+                  alt="Team member"
+                  class="rounded-full w-full h-full object-cover"
+                  data-alt="Portrait of lead system engineer"
+                  src="assets/Azwar.jpeg"
+                />
+              </div>
+              <h4 class="text-white text-lg font-bold font-display">Azwar Rafiq</h4>
+              <p class="text-primary text-xs font-bold uppercase tracking-tighter mb-4">
+                Lead Systems Engineer
+              </p>
+              <p class="text-slate-500 text-sm max-w-xs">
+                Focused on IoT Firmware and Cloud Infrastructure with Azure IoT Hub integration.
+              </p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div class="size-24 rounded-full border-2 border-primary/30 p-1 mb-6">
+                <img
+                  alt="Team member"
+                  class="rounded-full w-full h-full object-cover"
+                  data-alt="Portrait of mobile and backend specialist"
+                  src="assets/Abdul Sammad.jpg"
+                />
+              </div>
+              <h4 class="text-white text-lg font-bold font-display">Abdul Sammad</h4>
+              <p class="text-primary text-xs font-bold uppercase tracking-tighter mb-4">
+                Full-Stack Developer
+              </p>
+              <p class="text-slate-500 text-sm max-w-xs">
+                Spearheading Flutter Mobile development and real-time WebRTC streaming services.
+              </p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div class="size-24 rounded-full border-2 border-primary/30 p-1 mb-6">
+                <img
+                  alt="Team member"
+                  class="rounded-full w-full h-full object-cover"
+                  data-alt="Portrait of web and cloud architect"
+                  src="assets/Ali.jpeg"
+                />
+              </div>
+              <h4 class="text-white text-lg font-bold font-display">Ali Hassan</h4>
+              <p class="text-primary text-xs font-bold uppercase tracking-tighter mb-4">
+                Product Architect
+              </p>
+              <p class="text-slate-500 text-sm max-w-xs">
+                Designing the Next.js storefront and React management portals for end-to-end UX.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" style="margin: 0% 8%;">
+        <div class="container">
+        <div class="footer-grid">
+            <div>
+            <div class="logo" style="margin-bottom: 10px;">
+                <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+                <span>Smart <span style="color: var(--primary); font-size: 15px;">DoorBell</span></span>
+            </div>
+            <p>Setting a new standard for home security with local infrastructure and premium engineering.</p>
+            </div>
+            <div>
+            <strong>Product</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="product.html">How it works</a>
+                <a href="buy.html">Product Pricing</a>
+                <a href="product.html">Subscriptions Pricing</a>
+                <a href="support.html">Installation guide</a>
+            </div>
+            </div>
+            <div>
+            <strong>Company</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="story.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="support.html">Contact</a>
+            </div>
+            </div>
+            <div>
+            <strong>Legal</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="privacy.html">Terms & Privacy</a>
+            </div>
+            </div>
+        </div>
+        <div style="text-align: end;">
+            <div>2026 © Smart DoorBell. All rights reserved.</div>
+        </div>
+        </div>
+    </footer>
+    </div>
+  </body>
+</html>

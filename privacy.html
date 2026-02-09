@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Privacy &amp; Terms | SmartBell PK</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Outfit:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6366f1",
+              "background-light": "#f8fafc",
+              "background-dark": "#0f172a",
+            },
+            fontFamily: {
+              display: ["Outfit", "sans-serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gradient-border {
+        position: relative;
+      }
+      .gradient-border::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body class="bg-background-dark text-slate-300 font-sans transition-colors duration-300">
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html" style="margin-left: 11%;">
+          <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+          <span>Smart <span style="color: var(--primary); font-size: 25px;">DoorBell</span></span>
+        </a>
+        <div class="nav-links">
+          <a href="product.html">Product</a>
+          <a href="hardware-evolution.html">Hardware Evolution</a>
+          <a href="software-ecosystem.html">Software Evolution</a>
+          <a href="team.html">Team</a>
+          <a href="support.html">Support</a>
+        </div>
+        <div style="display: flex; gap: 10px; margin-right: 11%">
+          <a class="btn-order" href="buy.html">Order Now</a>
+          <a class="btn" href="app-download.html">Download App</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative py-20 overflow-hidden">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-20">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500 rounded-full blur-[100px]"></div>
+      </div>
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+          Legal: <span class="gradient-text">Privacy &amp; Terms</span>
+        </h1>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+          We take your security seriously. Below are our commitments to your data privacy, cloud
+          storage practices, and service terms.
+        </p>
+        <p class="mt-4 text-sm font-medium text-slate-500">Last Updated: February 8, 2026</p>
+      </div>
+    </section>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <aside class="hidden md:block col-span-1">
+          <nav class="sticky top-28 space-y-1">
+            <a
+              class="block py-2 px-3 text-sm font-medium text-primary bg-indigo-900/20 rounded-lg border-l-4 border-primary"
+              href="#privacy"
+              >Privacy Policy</a
+            >
+            <a
+              class="block py-2 px-3 text-sm font-medium text-slate-400 hover:text-primary transition-colors"
+              href="#camera-data"
+              >Camera Data</a
+            >
+            <a
+              class="block py-2 px-3 text-sm font-medium text-slate-400 hover:text-primary transition-colors"
+              href="#cloud-storage"
+              >Azure Cloud</a
+            >
+            <a
+              class="block py-2 px-3 text-sm font-medium text-slate-400 hover:text-primary transition-colors"
+              href="#terms"
+              >Terms of Service</a
+            >
+            <a
+              class="block py-2 px-3 text-sm font-medium text-slate-400 hover:text-primary transition-colors"
+              href="#subscriptions"
+              >Subscriptions</a
+            >
+          </nav>
+        </aside>
+        <div class="col-span-1 md:col-span-3 prose prose-slate dark:prose-invert max-w-none">
+          <section class="scroll-mt-24 mb-16" id="privacy">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-icons-outlined text-primary">security</span>
+              <h2 class="m-0 font-display text-2xl font-bold">Privacy Policy</h2>
+            </div>
+            <p>
+              Your privacy is fundamental to our mission. This policy outlines how we handle the
+              personal information collected through our IoT devices and mobile applications. We do
+              not sell your personal data to third parties.
+            </p>
+            <p>
+              We collect information you provide directly, such as your account details, and
+              information generated automatically by our devices, such as system health logs.
+            </p>
+          </section>
+          <section class="scroll-mt-24 mb-16" id="camera-data">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-icons-outlined text-primary">videocam</span>
+              <h2 class="m-0 font-display text-2xl font-bold">Camera &amp; Facial Data</h2>
+            </div>
+            <p>
+              All video recordings are processed with end-to-end encryption. Our facial recognition
+              technology operates locally on the device wherever possible to minimize data
+              transmission.
+            </p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li><strong>Edge Processing:</strong> Motion detection and basic object classification happen on-device.</li>
+              <li><strong>Biometric Data:</strong> Facial templates are encrypted and stored separately from video files.</li>
+              <li><strong>User Control:</strong> You can purge your video history and facial recognition database at any time through the SmartBell app.</li>
+            </ul>
+          </section>
+          <section class="scroll-mt-24 mb-16" id="cloud-storage">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-icons-outlined text-primary">cloud_done</span>
+              <h2 class="m-0 font-display text-2xl font-bold">Microsoft Azure Cloud Storage</h2>
+            </div>
+            <p>
+              We utilize <strong>Microsoft Azure</strong> enterprise-grade cloud infrastructure to
+              provide high-availability storage for your recordings.
+            </p>
+            <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+              <h4 class="mt-0 text-white">Why Azure?</h4>
+              <p class="text-sm mb-0">
+                By leveraging Azure's global data centers, we ensure your data is stored in
+                compliance with regional regulations (GDPR, CCPA). Data is encrypted at rest using
+                AES-256 and in transit using TLS 1.3. SmartBell employees do not have access to your
+                private decryption keys.
+              </p>
+            </div>
+          </section>
+          <hr class="border-slate-800 my-12" />
+          <section class="scroll-mt-24 mb-16" id="terms">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-icons-outlined text-primary">gavel</span>
+              <h2 class="m-0 font-display text-2xl font-bold">Terms of Service</h2>
+            </div>
+            <p>
+              By using SmartBell products and services, you agree to these terms. These services are
+              intended for personal, non-commercial use only.
+            </p>
+            <p>
+              You are responsible for ensuring that your use of SmartBell cameras complies with
+              local laws regarding the recording of public spaces or individuals without consent.
+            </p>
+          </section>
+          <section class="scroll-mt-24 mb-16" id="subscriptions">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-icons-outlined text-primary">payments</span>
+              <h2 class="m-0 font-display text-2xl font-bold">Subscription Terms</h2>
+            </div>
+            <p>SmartBell Plus and Professional tiers are billed on a recurring basis.</p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm text-left border-collapse">
+                <thead>
+                  <tr class="border-b border-slate-800">
+                    <th class="py-3 font-semibold text-white">Feature</th>
+                    <th class="py-3 font-semibold text-white text-center">Standard</th>
+                    <th class="py-3 font-semibold text-white text-center">Plus</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-800/60">
+                    <td class="py-3">Cloud History</td>
+                    <td class="py-3 text-center">24 Hours</td>
+                    <td class="py-3 text-center">30 Days</td>
+                  </tr>
+                  <tr class="border-b border-slate-800/60">
+                    <td class="py-3">Face Recognition</td>
+                    <td class="py-3 text-center text-slate-500">Basic</td>
+                    <td class="py-3 text-center text-primary font-bold">Advanced</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3">Azure Redundancy</td>
+                    <td class="py-3 text-center">LRS</td>
+                    <td class="py-3 text-center">GRS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-6 text-sm italic">
+              Cancellations: You may cancel your subscription at any time. Your access will continue
+              until the end of the current billing cycle.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" style="margin: 0% 8%;">
+        <div class="container">
+        <div class="footer-grid">
+            <div>
+            <div class="logo" style="margin-bottom: 10px;">
+                <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+                <span>Smart <span style="color: var(--primary); font-size: 15px;">DoorBell</span></span>
+            </div>
+            <p>Setting a new standard for home security with local infrastructure and premium engineering.</p>
+            </div>
+            <div>
+            <strong>Product</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="product.html">How it works</a>
+                <a href="buy.html">Product Pricing</a>
+                <a href="product.html">Subscriptions Pricing</a>
+                <a href="support.html">Installation guide</a>
+            </div>
+            </div>
+            <div>
+            <strong>Company</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="story.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="support.html">Contact</a>
+            </div>
+            </div>
+            <div>
+            <strong>Legal</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="privacy.html">Terms & Privacy</a>
+            </div>
+            </div>
+        </div>
+        <div style="text-align: end;">
+            <div>2026 © Smart DoorBell. All rights reserved.</div>
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>

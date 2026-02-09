@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Team &amp; Collaboration Model | SmartBell PK</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6366f1",
+              secondary: "#a855f7",
+              "background-light": "#f8fafc",
+              "background-dark": "#030712",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+              sans: ["Space Grotesk", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .diagram-orbit {
+        animation: rotate 20s linear infinite;
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .diagram-node {
+        animation: counter-rotate 20s linear infinite;
+      }
+      @keyframes counter-rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(-360deg);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-background-dark text-slate-100 font-sans transition-colors duration-300">
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html" style="margin-left: 11%;">
+          <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+          <span>Smart <span style="color: var(--primary); font-size: 25px;">DoorBell</span></span>
+        </a>
+        <div class="nav-links">
+          <a href="product.html">Product</a>
+          <a href="hardware-evolution.html">Hardware Evolution</a>
+          <a href="software-ecosystem.html">Software Evolution</a>
+          <a href="team.html">Team</a>
+          <a href="support.html">Support</a>
+        </div>
+        <div style="display: flex; gap: 10px; margin-right: 11%">
+          <a class="btn-order" href="buy.html">Order Now</a>
+          <a class="btn" href="app-download.html">Download App</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative pt-20 pb-16 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="font-display text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+          Our Team &amp; <span class="gradient-text">Collaboration</span> Model
+        </h1>
+        <p class="max-w-2xl mx-auto text-lg text-slate-400 leading-relaxed">
+          Meet the architects of modern home security. Our unified engineering approach bridges the
+          gap between hardware, cloud, and mobile experiences.
+        </p>
+      </div>
+    </header>
+
+    <section class="py-20 relative">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-slate-900/60 border border-slate-800 rounded-[2.5rem] p-12 shadow-2xl relative overflow-hidden"
+        >
+          <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 pointer-events-none"></div>
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative aspect-square flex items-center justify-center">
+              <div class="absolute inset-0 border-[1px] border-dashed border-slate-700 rounded-full"></div>
+              <div class="absolute inset-16 border-[1px] border-dashed border-slate-700 rounded-full"></div>
+              <div
+                class="z-10 w-40 h-40 bg-slate-900 rounded-3xl shadow-2xl flex items-center justify-center border border-slate-800"
+              >
+                <img
+                  alt="Security Shield Concept"
+                  class="w-32 h-32 object-contain"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0NMT-XKsamfTgODgVK3qnrLpfYHySCess8chaDmVwKzmWzvQjMrhCbKiCXeu0feEiMlFTkBu1kYgk2MZPyhGtkcqIeR1w3lE-7VQ7bfXN8MvaMtAJZfW-sqNqDbQblW96H4bpBRS19igBKDaiRS6t-V6E3S4YhHjtM6U3pSpDJ9SdG-RdxRLVoQRx0bO3nHA2VDcmi8Gm7kWzmfhlN23wYmTSwpl9xkteJqTnCjBVlzcBred25FYG3XEt_7cYynjb5T5BgMnCHYVn"
+                />
+              </div>
+              <div class="absolute w-full h-full diagram-orbit">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 diagram-node">
+                  <div class="bg-indigo-600 p-4 rounded-2xl shadow-xl flex flex-col items-center gap-1">
+                    <span class="material-symbols-outlined text-white text-3xl">memory</span>
+                    <span class="text-[10px] font-bold text-white uppercase tracking-widest">IoT Core</span>
+                  </div>
+                </div>
+                <div class="absolute bottom-[10%] left-0 -translate-x-1/2 diagram-node">
+                  <div class="bg-purple-600 p-4 rounded-2xl shadow-xl flex flex-col items-center gap-1">
+                    <span class="material-symbols-outlined text-white text-3xl">cloud_sync</span>
+                    <span class="text-[10px] font-bold text-white uppercase tracking-widest">Cloud Stack</span>
+                  </div>
+                </div>
+                <div class="absolute bottom-[10%] right-0 translate-x-1/2 diagram-node">
+                  <div class="bg-pink-600 p-4 rounded-2xl shadow-xl flex flex-col items-center gap-1">
+                    <span class="material-symbols-outlined text-white text-3xl">smartphone</span>
+                    <span class="text-[10px] font-bold text-white uppercase tracking-widest">Flutter UI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="font-display text-3xl font-bold mb-6">Unified Contribution Engine</h2>
+              <p class="text-slate-400 mb-8 leading-relaxed">
+                Unlike traditional siloed development, our team operates on a shared portfolio
+                model. Every engineer contributes across the entire stack, ensuring seamless
+                integration between hardware and software.
+              </p>
+              <ul class="space-y-6">
+                <li class="flex gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-300"
+                  >
+                    <span class="material-symbols-outlined">hub</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg">Integrated Pipeline</h4>
+                    <p class="text-sm text-slate-400">Shared CI/CD for firmware and application logic.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-300"
+                  >
+                    <span class="material-symbols-outlined">data_usage</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg">Unified Security Protocol</h4>
+                    <p class="text-sm text-slate-400">
+                      End-to-end encryption architecture managed by all leads.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-slate-900/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h3 class="font-display text-4xl font-bold mb-4">The Innovators</h3>
+          <p class="text-slate-400">The minds behind the next generation of home awareness.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="group bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 hover:border-primary transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+          >
+            <div class="aspect-[4/5] overflow-hidden relative">
+              <img
+                alt="Abdul Sammad - Lead Hardware Architect"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src="assets/Abdul Sammad.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+            <div class="p-8 text-center">
+              <h4 class="font-display text-2xl font-bold mb-1">Abdul Sammad</h4>
+              <p class="text-primary font-medium text-sm mb-6 uppercase tracking-wider">
+                Cloud Infra Lead
+              </p>
+              <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                Expert in low-latency IoT protocols and power-efficient embedded systems.
+              </p>
+              <a
+                class="inline-flex items-center justify-center w-full py-3 px-6 rounded-xl border border-slate-700 font-semibold text-sm hover:bg-primary hover:border-primary hover:text-white transition-all"
+                href="abdul-sammad.html"
+              >
+                View Profile
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 hover:border-secondary transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+          >
+            <div class="aspect-[4/5] overflow-hidden relative">
+              <img
+                alt="Azwar Rafiq - Head of App Ecosystem"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src="assets/Azwar.jpeg"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+            <div class="p-8 text-center">
+              <h4 class="font-display text-2xl font-bold mb-1">Azwar Rafiq</h4>
+              <p class="text-secondary font-medium text-sm mb-6 uppercase tracking-wider">
+                Head of App Ecosystem
+              </p>
+              <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                Flutter specialist focusing on intuitive UI and real-time biometric synchronization.
+              </p>
+              <a
+                class="inline-flex items-center justify-center w-full py-3 px-6 rounded-xl border border-slate-700 font-semibold text-sm hover:bg-secondary hover:border-secondary hover:text-white transition-all"
+                href="azwar-rafiq.html"
+              >
+                View Profile
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 hover:border-indigo-400 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+          >
+            <div class="aspect-[4/5] overflow-hidden relative">
+              <img
+                alt="Ali - Cloud Infrastructure Lead"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src="assets/Ali.jpeg"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+            <div class="p-8 text-center">
+              <h4 class="font-display text-2xl font-bold mb-1">Ali Hassan</h4>
+              <p class="text-indigo-300 font-medium text-sm mb-6 uppercase tracking-wider">
+                Lead Hardware Architect
+              </p>
+              <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                Scale expert ensuring 99.9% uptime for petabytes of secure video streaming.
+              </p>
+              <a
+                class="inline-flex items-center justify-center w-full py-3 px-6 rounded-xl border border-slate-700 font-semibold text-sm hover:bg-indigo-400 hover:border-indigo-400 hover:text-white transition-all"
+                href="ali-hassan.html"
+              >
+                View Profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" style="margin: 0% 8%;">
+        <div class="container">
+        <div class="footer-grid">
+            <div>
+            <div class="logo" style="margin-bottom: 10px;">
+                <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+                <span>Smart <span style="color: var(--primary); font-size: 15px;">DoorBell</span></span>
+            </div>
+            <p>Setting a new standard for home security with local infrastructure and premium engineering.</p>
+            </div>
+            <div>
+            <strong>Product</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="product.html">How it works</a>
+                <a href="buy.html">Product Pricing</a>
+                <a href="product.html">Subscriptions Pricing</a>
+                <a href="support.html">Installation guide</a>
+            </div>
+            </div>
+            <div>
+            <strong>Company</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="story.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="support.html">Contact</a>
+            </div>
+            </div>
+            <div>
+            <strong>Legal</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="privacy.html">Terms & Privacy</a>
+            </div>
+            </div>
+        </div>
+        <div style="text-align: end;">
+            <div>2026 © Smart DoorBell. All rights reserved.</div>
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>

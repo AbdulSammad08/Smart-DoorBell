@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Story &amp; Tech Mission | SmartBell PK</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6366f1",
+              "background-light": "#f8fafc",
+              "background-dark": "#0f172a",
+            },
+            fontFamily: {
+              display: ["Sora", "sans-serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .hero-gradient {
+        background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent),
+          radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.1), transparent);
+      }
+    </style>
+  </head>
+  <body class="bg-background-dark text-slate-100 font-sans transition-colors duration-300">
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html" style="margin-left: 11%;">
+          <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+          <span>Smart <span style="color: var(--primary); font-size: 25px;">DoorBell</span></span>
+        </a>
+        <div class="nav-links">
+          <a href="product.html">Product</a>
+          <a href="hardware-evolution.html">Hardware Evolution</a>
+          <a href="software-ecosystem.html">Software Evolution</a>
+          <a href="team.html">Team</a>
+          <a href="support.html">Support</a>
+        </div>
+        <div style="display: flex; gap: 10px; margin-right: 11%">
+          <a class="btn-order" href="buy.html">Order Now</a>
+          <a class="btn" href="app-download.html">Download App</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative overflow-hidden pt-20 pb-16 lg:pt-32 lg:pb-24 hero-gradient">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span
+              class="inline-block py-1 px-3 rounded-full bg-indigo-900/30 text-primary text-xs font-bold uppercase tracking-wider mb-6"
+            >
+              Innovating for Pakistan
+            </span>
+            <h1 class="font-display text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+              The Evolution of <br />
+              <span class="gradient-text">Home Security.</span>
+            </h1>
+            <p class="text-lg text-slate-400 mb-8 leading-relaxed max-w-xl">
+              Born as a visionary Final Year Project, SmartShield is evolving into a
+              commercial-grade IoT ecosystem designed to protect what matters most.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                class="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all"
+                href="#story"
+              >
+                Read Our Story
+              </a>
+              <a
+                class="px-8 py-4 bg-slate-800 border border-slate-700 font-bold rounded-xl hover:bg-slate-700 transition-all"
+                href="#tech"
+              >
+                View Tech Stack
+              </a>
+            </div>
+          </div>
+          <div class="relative flex justify-center">
+            <div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-30 animate-pulse"></div>
+            <img
+              alt="SmartShield Central Vision"
+              class="relative z-10 w-full max-w-md drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+              src="assets/prototype-4.jpeg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-slate-900/50" id="story">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">The Journey</h2>
+          <div class="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
+        </div>
+        <div class="relative">
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-slate-800 hidden md:block"></div>
+          <div class="relative grid md:grid-cols-2 gap-8 mb-16">
+            <div class="md:text-right md:pr-12 self-center">
+              <span class="text-primary font-bold text-xl mb-2 block">The Spark</span>
+              <h3 class="text-2xl font-bold mb-3">University Final Year Project</h3>
+              <p class="text-slate-400">
+                What started as an academic challenge at the intersection of IoT and AI became a
+                passion project. We identified a gap in the local market for high-end, reliable, and
+                affordable security solutions.
+              </p>
+            </div>
+            <div class="hidden md:flex items-center justify-start pl-12">
+              <div
+                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white z-10 border-4 border-background-dark"
+              >
+                <span class="material-symbols-outlined">school</span>
+              </div>
+            </div>
+          </div>
+          <div class="relative grid md:grid-cols-2 gap-8 mb-16">
+            <div class="hidden md:flex items-center justify-end pr-12">
+              <div
+                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white z-10 border-4 border-background-dark"
+              >
+                <span class="material-symbols-outlined">biotech</span>
+              </div>
+            </div>
+            <div class="md:text-left md:pl-12 self-center">
+              <span class="text-primary font-bold text-xl mb-2 block">Refinement</span>
+              <h3 class="text-2xl font-bold mb-3">From Prototype to Product</h3>
+              <p class="text-slate-400">
+                Moving beyond the lab, we optimized our hardware, integrated cloud services, and
+                perfected the facial recognition algorithms to ensure zero-latency performance.
+              </p>
+            </div>
+          </div>
+          <div class="relative grid md:grid-cols-2 gap-8">
+            <div class="md:text-right md:pr-12 self-center">
+              <span class="text-primary font-bold text-xl mb-2 block">The Future</span>
+              <h3 class="text-2xl font-bold mb-3">Full Commercial Launch</h3>
+              <p class="text-slate-400">
+                We are now transitioning into a fully-fledged commercial product, ready to
+                revolutionize how Pakistani households interact with their front doors.
+              </p>
+            </div>
+            <div class="hidden md:flex items-center justify-start pl-12">
+              <div
+                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white z-10 border-4 border-background-dark"
+              >
+                <span class="material-symbols-outlined">rocket_launch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-primary text-white" id="mission">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="font-display text-4xl font-bold mb-8">Security for Every Pakistani Home</h2>
+            <p class="text-xl text-indigo-100 mb-8 leading-relaxed">
+              Our mission is simple yet profound: To leverage the power of the Industrial Internet
+              of Things (IIoT) to provide premium security that is accessible, intelligent, and
+              tailored for our local environment.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-indigo-300">verified</span>
+                <span>Enterprise-grade facial recognition for family safety.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-indigo-300">verified</span>
+                <span>Cloud-based surveillance with zero subscription fees.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-indigo-300">verified</span>
+                <span>Seamless integration with local smart home protocols.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20 text-center">
+              <div class="text-4xl font-bold mb-2">100%</div>
+              <div class="text-indigo-200 text-sm">Local Support</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20 text-center mt-8">
+              <div class="text-4xl font-bold mb-2">24/7</div>
+              <div class="text-indigo-200 text-sm">Cloud Monitoring</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24" id="tech">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">The Tech Stack</h2>
+          <p class="text-slate-400">Powered by industry-leading technologies for reliability and scale.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:shadow-xl transition-shadow group"
+          >
+            <div
+              class="w-16 h-16 bg-blue-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-blue-400 text-3xl">cloud</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Microsoft Azure</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Backbone for our real-time notification engine and secure storage for encrypted video
+              feeds.
+            </p>
+          </div>
+          <div
+            class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:shadow-xl transition-shadow group"
+          >
+            <div
+              class="w-16 h-16 bg-cyan-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-cyan-400 text-3xl">desktop_windows</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3">React.js</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              A robust administrative dashboard allowing users to manage devices and review security
+              logs from any browser.
+            </p>
+          </div>
+          <div
+            class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:shadow-xl transition-shadow group"
+          >
+            <div
+              class="w-16 h-16 bg-indigo-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-primary text-3xl">smartphone</span>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Flutter</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Our cross-platform mobile app provides a high-performance experience on both iOS and
+              Android.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" style="margin: 0% 8%;">
+        <div class="container">
+        <div class="footer-grid">
+            <div>
+            <div class="logo" style="margin-bottom: 10px;">
+                <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+                <span>Smart <span style="color: var(--primary); font-size: 15px;">DoorBell</span></span>
+            </div>
+            <p>Setting a new standard for home security with local infrastructure and premium engineering.</p>
+            </div>
+            <div>
+            <strong>Product</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="product.html">How it works</a>
+                <a href="buy.html">Product Pricing</a>
+                <a href="product.html">Subscriptions Pricing</a>
+                <a href="support.html">Installation guide</a>
+            </div>
+            </div>
+            <div>
+            <strong>Company</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="story.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="support.html">Contact</a>
+            </div>
+            </div>
+            <div>
+            <strong>Legal</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="privacy.html">Terms & Privacy</a>
+            </div>
+            </div>
+        </div>
+        <div style="text-align: end;">
+            <div>2026 © Smart DoorBell. All rights reserved.</div>
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>

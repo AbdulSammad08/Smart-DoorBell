@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="scroll-smooth dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guardian IoT Smart Doorbell | Product</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500;600;700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#6366f1",
+            "background-light": "#f8fafc",
+            "background-dark": "#0f172a",
+          },
+          borderRadius: {
+            DEFAULT: "0.75rem",
+          },
+          backgroundImage: {
+            "brand-gradient": "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .spec-card:hover { transform: translateY(-4px); transition: all 0.3s ease; }
+    .chip { border: 1px solid rgba(99, 102, 241, 0.25); }
+    .feature-card:hover .icon-bg { transform: scale(1.1); transition: all 0.3s ease; }
+    .spec-grid p {
+      position: relative;
+      padding-left: 20px;
+    }
+    .spec-grid p::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .hardware-label {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      background-color: #6366f1;
+      border: 2px solid white;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(99, 102, 241, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" style="margin-left: 11%;">
+        <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+        <span>Smart <span style="color: var(--primary); font-size: 25px;">DoorBell</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="product.html">Product</a>
+        <a href="hardware-evolution.html">Hardware Evolution</a>
+        <a href="software-ecosystem.html">Software Evolution</a>
+        <a href="team.html">Team</a>
+        <a href="support.html">Support</a>
+      </div>
+      <div style="display: flex; gap: 10px; margin-right: 11%">
+        <a class="btn-order" href="buy.html">Order Now</a>
+        <a class="btn" href="app-download.html">Download App</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-20 px-4 bg-brand-gradient text-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-white/15 px-4 py-1 rounded-full text-xs uppercase tracking-widest">Guardian Series</div>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight mt-4">Guardian Smart Doorbell</h1>
+      <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto">A premium hardware system built to handle heat, dust, and network volatility with zero compromise on clarity.</p>
+      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        <a class="bg-white text-slate-900 px-8 py-3 rounded-full font-bold" href="buy.html">Pre-order</a>
+        <a class="bg-white/10 border border-white/30 px-8 py-3 rounded-full font-bold" href="#specs">View specs</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-24 px-4 overflow-hidden" id="hardware">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Inside the Hardware</h2>
+        <div class="h-1 w-20 bg-brand-gradient mx-auto rounded-full"></div>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="relative bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700 aspect-square flex items-center justify-center">
+          <div class="relative w-full h-full flex items-center justify-center">
+            <img alt="Product Hardware Core" class="w-3/3 opacity-20 dark:opacity-60 filter grayscale" src="assets/prototype-1.jpeg" />
+            <div class="hardware-label top-1/4 left-1/4">
+              <div class="dot"></div>
+              <div class="bg-white/90 dark:bg-slate-900/90 backdrop-blur p-2 rounded-lg border border-slate-200 dark:border-slate-700 shadow-lg">
+                <span class="block text-xs font-bold text-primary uppercase">Main Core</span>
+                <span class="text-sm font-medium">ESP32-CAM Module</span>
+              </div>
+            </div>
+            <div class="hardware-label bottom-1/3 right-1/4">
+              <div class="dot"></div>
+              <div class="bg-white/90 dark:bg-slate-900/90 backdrop-blur p-2 rounded-lg border border-slate-200 dark:border-slate-700 shadow-lg">
+                <span class="block text-xs font-bold text-primary uppercase">Audio Processing</span>
+                <span class="text-sm font-medium">Dedicated ESP32 Audio SoC</span>
+              </div>
+            </div>
+            <div class="hardware-label top-1/2 -right-4">
+              <div class="dot"></div>
+              <div class="bg-white/90 dark:bg-slate-900/90 backdrop-blur p-2 rounded-lg border border-slate-200 dark:border-slate-700 shadow-lg">
+                <span class="block text-xs font-bold text-primary uppercase">Detection</span>
+                <span class="text-sm font-medium">PIR &amp; Ultrasonic Array</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+              <span class="material-icons-round text-primary">memory</span>
+              Dual-Core Processing
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400">Our custom architecture splits video streaming and audio processing between two discrete ESP32 chips, ensuring zero-latency two-way communication even during 1080p recording.</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+              <span class="material-icons-round text-primary">camera</span>
+              Optical Stack
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400">160 deg wide-angle lens paired with a high-sensitivity sensor for superior night vision. Includes an automated IR-cut filter for true color during the day.</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+              <span class="material-icons-round text-primary">sensors</span>
+              Smart Sensor Array
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400">Combining passive infrared (PIR) with ultrasonic rangefinding to reduce false alerts from passing cars or swaying trees by 95%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-4 bg-slate-50 dark:bg-slate-900/50" id="features">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Intelligent Features</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">Security that thinks, learns, and protects your home 24/7.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="feature-card bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 group transition-all hover:shadow-xl">
+          <div class="icon-bg w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6">
+            <span class="material-icons-round text-primary text-3xl">videocam</span>
+          </div>
+          <h4 class="text-xl font-bold mb-3">Live 2K Video</h4>
+          <p class="text-slate-600 dark:text-slate-400">Crystal clear streaming directly to your phone. Zero lag, high frame rate monitoring from anywhere in the world.</p>
+        </div>
+        <div class="feature-card bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 group transition-all hover:shadow-xl">
+          <div class="icon-bg w-14 h-14 bg-purple-100 dark:bg-purple-900/30 rounded-2xl flex items-center justify-center mb-6">
+            <span class="material-icons-round text-primary text-3xl">notifications_active</span>
+          </div>
+          <h4 class="text-xl font-bold mb-3">Motion Alerts</h4>
+          <p class="text-slate-600 dark:text-slate-400">AI-driven human detection sends instant notifications only when it matters. No more false alarms from pets.</p>
+        </div>
+        <div class="feature-card bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 group transition-all hover:shadow-xl">
+          <div class="icon-bg w-14 h-14 bg-indigo-100 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center mb-6">
+            <span class="material-icons-round text-primary text-3xl">record_voice_over</span>
+          </div>
+          <h4 class="text-xl font-bold mb-3">Two-Way Talk</h4>
+          <p class="text-slate-600 dark:text-slate-400">Full-duplex audio allows natural conversation with visitors or delivery drivers through the built-in noise-canceling mic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-4" id="overview">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Designed for real streets</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-6">Guardian uses a dual-chip architecture and a ruggedized housing to stay reliable during power swings and high humidity. Every unit is calibrated for local internet conditions and tuned for fast alerts.</p>
+        <div class="flex flex-wrap gap-3">
+          <span class="chip text-xs px-4 py-2 rounded-full text-primary bg-primary/10">Dual-core ESP32</span>
+          <span class="chip text-xs px-4 py-2 rounded-full text-primary bg-primary/10">2K HDR</span>
+          <span class="chip text-xs px-4 py-2 rounded-full text-primary bg-primary/10">IP67 sealing</span>
+          <span class="chip text-xs px-4 py-2 rounded-full text-primary bg-primary/10">Local cloud</span>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-200 dark:border-slate-700">
+        <img alt="Guardian Smart Doorbell" class="w-full" src="assets/prototype-3.jpeg" />
+        <div class="mt-6 grid grid-cols-3 gap-4 text-center text-xs text-slate-500">
+          <div><div class="text-lg font-bold text-slate-900 dark:text-white">0.2s</div>Alert latency</div>
+          <div><div class="text-lg font-bold text-slate-900 dark:text-white">160 deg</div>Field of view</div>
+          <div><div class="text-lg font-bold text-slate-900 dark:text-white">-10C to 55C</div>Operating range</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-4 bg-slate-50 dark:bg-slate-900/50" id="specs">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Technical specifications</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">Built for stability, low latency, and crisp clarity at every hour.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="spec-card bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700">
+          <h4 class="text-lg font-bold mb-2">Camera</h4>
+          <p class="text-slate-600 dark:text-slate-400">2K HDR, 160 deg ultra-wide, IR night vision, auto IR-cut filter.</p>
+        </div>
+        <div class="spec-card bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700">
+          <h4 class="text-lg font-bold mb-2">Audio</h4>
+          <p class="text-slate-600 dark:text-slate-400">Dual mic array, echo cancellation, 2W speaker, full-duplex talk.</p>
+        </div>
+        <div class="spec-card bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700">
+          <h4 class="text-lg font-bold mb-2">Connectivity</h4>
+          <p class="text-slate-600 dark:text-slate-400">Dual-band Wi-Fi, BLE onboarding, MQTT transport, LAN fallback.</p>
+        </div>
+        <div class="spec-card bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700">
+          <h4 class="text-lg font-bold mb-2">Security</h4>
+          <p class="text-slate-600 dark:text-slate-400">Secure boot, AES-256 encryption, signed firmware updates.</p>
+        </div>
+        <div class="spec-card bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700">
+          <h4 class="text-lg font-bold mb-2">Power</h4>
+          <p class="text-slate-600 dark:text-slate-400">12V adapter, surge protection, optional battery backup.</p>
+        </div>
+        <div class="spec-card bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700">
+          <h4 class="text-lg font-bold mb-2">Storage</h4>
+          <p class="text-slate-600 dark:text-slate-400">Encrypted cloud archive and SD backup for offline resilience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-4" id="packages">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Choose your Subscription plan</h2>
+        <p class="text-slate-600 dark:text-slate-400">Select the plan that best fits your needs and enjoy seamless security.</p>
+        <p>To Get any plan Download Our App from <a href="https://play.google.com/store/apps/details?id=com.guardian.iot" class="text-primary underline">Google Play Store</a> or <a href="https://apps.apple.com/app/guardian-iot-smart-doorbell/id123456789" class="text-primary underline">Apple App Store</a>.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 sp spec-grid">
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700">
+          <h4 class="text-xl font-bold mb-2">Basic Plan</h4>
+          <p class="text-slate-600 dark:text-slate-400">Doorbell notifications (push notifications)</p>
+          <p class="text-slate-600 dark:text-slate-400">Live audio/video streaming</p>
+          <p class="text-slate-600 dark:text-slate-400">Basic device linking</p>
+          <p class="text-slate-600 dark:text-slate-400">Manual access for guest users (if needed)</p>          <div class="text-3xl font-extrabold mt-6">PKR 299/monthly</div>
+          <a class="mt-6 inline-flex bg-primary text-white px-6 py-3 rounded-full" href="app-download.html">Select Plan</a>
+        </div>
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border-2 border-primary shadow-xl">
+          <div class="text-xs uppercase tracking-widest text-primary font-bold">Best value</div>
+          <h4 class="text-xl font-bold mb-2 mt-2">Premium Plan</h4>
+          <p class="text-slate-600 dark:text-slate-400">Doorbell notifications (push notifications)</p>
+          <p class="text-slate-600 dark:text-slate-400">Live audio/video streaming</p>
+          <p class="text-slate-600 dark:text-slate-400">Motion detection system</p>
+          <p class="text-slate-600 dark:text-slate-400">Motion-based alert notifications Ownership transfer (manual approval)</p>
+          <div class="text-3xl font-extrabold mt-6">PKR 599/monthly</div>
+          <a class="mt-6 inline-flex bg-primary text-white px-6 py-3 rounded-full" href="app-download.html">Select Plan</a>
+        </div>
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700">
+          <h4 class="text-xl font-bold mb-2">Business Plan</h4>
+          <p class="text-slate-600 dark:text-slate-400">Doorbell notifications (push notifications)</p>
+          <p class="text-slate-600 dark:text-slate-400">Live audio/video streaming</p>
+          <p class="text-slate-600 dark:text-slate-400">Motion detection system</p>
+          <p class="text-slate-600 dark:text-slate-400">Motion-based alert notifications</p>
+          <p class="text-slate-600 dark:text-slate-400">Facial recognition system (with identified/unknown alerts)</p>
+          <p class="text-slate-600 dark:text-slate-400">Ownership transfer (manual approval)</p>
+          <div class="text-3xl font-extrabold mt-6">PKR 999/monthly</div>
+          <a class="mt-6 inline-flex bg-primary text-white px-6 py-3 rounded-full" href="app-download.html">Select Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-4 bg-slate-50 dark:bg-slate-900/50" id="support">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Installation and support</h2>
+        <p class="text-slate-600 dark:text-slate-400">We install, test, and calibrate on-site. Guardian support teams provide firmware updates, diagnostics, and fast replacements.</p>
+        <div class="mt-6 flex flex-wrap gap-4 text-sm">
+          <div class="px-4 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">2-year warranty</div>
+          <div class="px-4 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">Same-week installation</div>
+          <div class="px-4 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">Live diagnostics</div>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700">
+        <h3 class="text-xl font-bold mb-2">Schedule a demo</h3>
+        <p class="text-slate-600 dark:text-slate-400">Test Guardian on your own Wi-Fi and view alerts in real time.</p>
+        <a class="mt-6 inline-flex bg-primary text-white px-6 py-3 rounded-full" href="support.html">Book a demo</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" style="margin: 0% 8%;">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="margin-bottom: 10px;">
+            <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+            <span>Smart <span style="color: var(--primary); font-size: 15px;">DoorBell</span></span>
+          </div>
+          <p>Setting a new standard for home security with local infrastructure and premium engineering.</p>
+        </div>
+        <div>
+          <strong>Product</strong>
+          <div style="display: grid; gap: 8px; margin-top: 10px;">
+            <a href="product.html">How it works</a>
+            <a href="buy.html">Product Pricing</a>
+            <a href="product.html">Subscriptions Pricing</a>
+            <a href="support.html">Installation guide</a>
+          </div>
+        </div>
+        <div>
+          <strong>Company</strong>
+          <div style="display: grid; gap: 8px; margin-top: 10px;">
+            <a href="story.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="support.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <strong>Legal</strong>
+          <div style="display: grid; gap: 8px; margin-top: 10px;">
+            <a href="privacy.html">Terms & Privacy</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: end;">
+        <div>2026 © Smart DoorBell. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SmartBell IoT - App Download &amp; Setup</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1392ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101a22",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .mesh-gradient {
+        background-color: #101a22;
+        background-image: radial-gradient(
+            at 0% 0%,
+            rgba(19, 146, 236, 0.15) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 100% 100%,
+            rgba(19, 146, 236, 0.1) 0px,
+            transparent 50%
+          );
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen mesh-gradient"
+  >
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html" style="margin-left: 11%;">
+          <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+          <span>Smart <span style="color: var(--primary); font-size: 25px;">DoorBell</span></span>
+        </a>
+        <div class="nav-links">
+          <a href="product.html">Product</a>
+          <a href="hardware-evolution.html">Hardware Evolution</a>
+          <a href="software-ecosystem.html">Software Evolution</a>
+          <a href="team.html">Team</a>
+          <a href="support.html">Support</a>
+        </div>
+        <div style="display: flex; gap: 10px; margin-right: 11%">
+          <a class="btn-order" href="buy.html">Order Now</a>
+          <a class="btn" href="app-download.html">Download App</a>
+        </div>
+      </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-6 py-12 lg:px-20 lg:py-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <!-- Left Column: Content & Download -->
+        <div class="flex flex-col gap-8 order-2 lg:order-1">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider w-fit"
+          >
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+              ></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            Latest Release: v3.0.2
+          </div>
+          <div class="space-y-4">
+            <h1 class="text-5xl lg:text-7xl font-bold font-display leading-[1.1]">
+              Your Home, in the <span class="text-primary">Palm</span> of Your Hand.
+            </h1>
+            <p class="text-lg text-slate-400 max-w-lg leading-relaxed">
+              Experience the future of Pakistani home security. Control your door, talk to
+              visitors, and view live feeds with full Urdu and English localization.
+            </p>
+          </div>
+          <!-- Download Actions -->
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-wrap gap-4">
+              <a
+                class="flex flex-col items-start bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl transition-all shadow-xl shadow-primary/30 group"
+                href="apk/app-release.apk"
+                download
+              >
+                <span class="flex items-center gap-2 font-bold text-lg">
+                  <span class="material-symbols-outlined">download</span>
+                  Download APK
+                </span>
+                <span class="text-xs opacity-80 font-medium">v3.0.2 • 62MB • Android 8.0+</span>
+              </a>
+            </div>
+            <!-- Security Notice Card -->
+            <div class="glass-card p-5 rounded-xl flex gap-4 max-w-lg">
+              <div class="text-primary pt-1">
+                <span class="material-symbols-outlined">gpp_maybe</span>
+              </div>
+              <div>
+                <p class="font-bold text-sm mb-1">Security Notice</p>
+                <p class="text-xs text-slate-400 leading-normal">
+                  To install the SmartBell APK, please enable
+                  <span class="text-white font-medium">'Install from Unknown Sources'</span>
+                  in your Android security settings. This is standard for direct APK
+                  installations.
+                </p>
+                <a
+                  class="inline-flex items-center gap-1 text-primary text-xs font-bold mt-3 hover:underline"
+                  href="#"
+                >
+                  View Setup Guide
+                  <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Feature Pills -->
+          <div class="flex flex-wrap gap-6 pt-4">
+            <div class="flex items-center gap-2 text-slate-400">
+              <span class="material-symbols-outlined text-primary">translate</span>
+              <span class="text-sm font-medium">Facial Recognition</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-400">
+              <span class="material-symbols-outlined text-primary">notifications_active</span>
+              <span class="text-sm font-medium">Instant Alerts</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-400">
+              <span class="material-symbols-outlined text-primary">cloud_done</span>
+              <span class="text-sm font-medium">Cloud Storage</span>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column: Smartphone Mockup -->
+        <div class="relative order-1 lg:order-2 flex justify-center">
+          <!-- Background Glow -->
+          <div
+            class="absolute inset-0 bg-primary/20 blur-[120px] rounded-full scale-75 pointer-events-none"
+          ></div>
+          <!-- Phone Frame -->
+          <div
+            class="relative w-[300px] h-[600px] bg-[#0c1116] rounded-[3rem] p-3 border-[6px] border-[#1e293b] shadow-2xl"
+          >
+            <!-- Screen Container -->
+            <div class="relative w-full h-full bg-black rounded-[2.2rem] overflow-hidden">
+              <!-- Camera Notch -->
+              <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl z-20"
+              ></div>
+              <!-- App UI Screen Content -->
+              <div class="flex flex-col h-full bg-[#101a22]">
+                <!-- App Header -->
+                <div class="p-6 pt-10 flex justify-between items-center">
+                  <div>
+                    <p class="text-[10px] text-slate-400 uppercase tracking-tighter">Connected</p>
+                    <p class="text-sm font-bold">Main Entrance</p>
+                  </div>
+                  <div class="bg-white/5 p-2 rounded-lg text-xs">اردو</div>
+                </div>
+                <!-- Live Feed Area -->
+                <div class="flex-1 px-4">
+                  <div
+                    class="w-full aspect-[9/16] rounded-2xl overflow-hidden relative border border-white/5"
+                  >
+                    <img
+                      class="w-full h-full object-cover brightness-75"
+                      data-alt="Security camera view of a modern front porch"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDytBy7lScwWUQbiSiBIpLtLDBkQXnNox35QQKz82NoRg-trvmckcoRw-wlKXS-jvLxgGBgwe2Hw7_Di0DJjsmWFzeqboE7pBZERwqMBR_GMK6MTkLPA7c46oyDQzyEtz1Wh7nMmEoLrb9uQwF6953aU3w3F2YNwCt-DmMUulc_4o94US-6A57Qcx5kOMT8RP61ww2uyCuNov8ut9xqt3QN7YPOfsl7_GStsD9NwZKVa1Ioi7oOr3G5GmCn0ATBE5Llga1-k0OuRlGD"
+                    />
+                    <div
+                      class="absolute top-4 left-4 bg-red-600 px-2 py-0.5 rounded text-[10px] font-bold flex items-center gap-1"
+                    >
+                      <span class="w-1.5 h-1.5 bg-white rounded-full"></span> LIVE
+                    </div>
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-4">
+                      <div
+                        class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20"
+                      >
+                        <span class="material-symbols-outlined text-sm">mic</span>
+                      </div>
+                      <div
+                        class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 text-red-400"
+                      >
+                        <span class="material-symbols-outlined text-sm">videocam_off</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <div class="p-6 pb-10 flex flex-col gap-4">
+                  <button
+                    class="w-full py-4 rounded-xl bg-primary flex items-center justify-center gap-2 font-bold text-sm shadow-lg shadow-primary/20"
+                  >
+                    <span class="material-symbols-outlined text-lg">lock_open</span> Unlock Door
+                  </button>
+                  <div class="grid grid-cols-2 gap-3">
+                    <div
+                      class="bg-white/5 p-4 rounded-xl flex flex-col items-center gap-1 border border-white/5"
+                    >
+                      <span class="material-symbols-outlined text-slate-400">history</span>
+                      <span
+                        class="text-[10px] uppercase font-bold text-slate-400 tracking-wider"
+                        >Events</span
+                      >
+                    </div>
+                    <div
+                      class="bg-white/5 p-4 rounded-xl flex flex-col items-center gap-1 border border-white/5"
+                    >
+                      <span class="material-symbols-outlined text-slate-400">settings</span>
+                      <span
+                        class="text-[10px] uppercase font-bold text-slate-400 tracking-wider"
+                        >Setup</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Play Store Section -->
+      <section class="mt-32 pt-20 border-t border-white/5">
+        <div class="max-w-3xl mx-auto text-center">
+          <h3 class="text-2xl font-display font-bold mb-8">Official Store Availability</h3>
+          <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div class="group relative grayscale opacity-50 cursor-not-allowed">
+              <div
+                class="absolute -top-6 left-1/2 -translate-x-1/2 bg-slate-800 text-[10px] font-bold px-2 py-1 rounded border border-white/10 whitespace-nowrap"
+              >
+                COMING SOON
+              </div>
+              <img
+                class="h-14"
+                data-alt="Greyed out Google Play Store badge"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuARnsyfmGaMwW3Z_AmV8LzlEOt7olbM936QtXe6FPMaQBKmJJnQOBgqVTHVZdl6tnQBTKhrItOnhUbat3Ai1q76r0oRYoFLbyiE_ffECZA_iSnndaJMhi4b2PPm8pXn7uT_dEAvQPiBTqxdekyXGeMmIFjV0XsRmfOr83XTg1x0ISKWcBiRXNH_4yQ0SdsHj7MpdL9GOgHmElQub5TbzMmzrC4lIfZ9vP2uyhlgMczjRP4sKrIpm6waXXBXAsfPdv_dsRWbescCUfSV"
+              />
+            </div>
+            <div class="group relative grayscale opacity-50 cursor-not-allowed">
+              <div
+                class="absolute -top-6 left-1/2 -translate-x-1/2 bg-slate-800 text-[10px] font-bold px-2 py-1 rounded border border-white/10 whitespace-nowrap"
+              >
+                Q4 2024
+              </div>
+              <img
+                class="h-14"
+                data-alt="Greyed out Apple App Store badge"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3fOcVocZXm7VKbvtUjru5Wa4vqEjQlYmDG-oovYFxW59Ui43hRs_9Sy95DsoQnM3xRezuaY-rEDuYm_7xYTqwRcLaS48w5h0qwh_40mDYcVF6_OfrPnuWPYb_mErut_UOB1vuXezuHpCYRXBeeb3q4bmAUJM7zDp48mhKOI25CdDGF5pUi9AUvv22qbmXQIBGiL55nf2jXzmr9JW1SDbkA1oq-Hya6x7pBrm91_zqJxy7NBM8elIhhgsWxpjjnvVArpon4987tSHJ"
+              />
+            </div>
+          </div>
+          <div class="mt-12 inline-flex items-center gap-4 glass-card px-6 py-4 rounded-2xl">
+            <p class="text-sm text-slate-400">
+              Want to be notified when we launch on official stores?
+            </p>
+            <div class="flex gap-2">
+              <input
+                class="bg-white/5 border border-white/10 rounded-lg px-3 py-1.5 text-sm focus:border-primary focus:ring-0 outline-none w-48"
+                placeholder="Enter email"
+                type="email"
+              />
+              <button
+                class="bg-primary/20 text-primary hover:bg-primary/30 px-4 py-1.5 rounded-lg text-sm font-bold transition-colors"
+              >
+                Notify Me
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" style="margin: 0% 8%;">
+        <div class="container">
+        <div class="footer-grid">
+            <div>
+            <div class="logo" style="margin-bottom: 10px;">
+                <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+                <span>Smart <span style="color: var(--primary); font-size: 15px;">DoorBell</span></span>
+            </div>
+            <p>Setting a new standard for home security with local infrastructure and premium engineering.</p>
+            </div>
+            <div>
+            <strong>Product</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="product.html">How it works</a>
+                <a href="buy.html">Product Pricing</a>
+                <a href="product.html">Subscriptions Pricing</a>
+                <a href="support.html">Installation guide</a>
+            </div>
+            </div>
+            <div>
+            <strong>Company</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="story.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="support.html">Contact</a>
+            </div>
+            </div>
+            <div>
+            <strong>Legal</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="privacy.html">Terms & Privacy</a>
+            </div>
+            </div>
+        </div>
+        <div style="text-align: end;">
+            <div>2026 © Smart DoorBell. All rights reserved.</div>
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>

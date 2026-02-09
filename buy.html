@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Order Hardware - Smart Doorbell Startup</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1392ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101a22",
+            },
+            fontFamily: {
+              display: ["Space Grotesk"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #111b22;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #325167;
+        border-radius: 10px;
+      }
+      .checkbox-custom:checked {
+        background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDhBPXKc1zwvFwchyDwaJe3Pgbbz8MZCrBgsfEyYfxYyfQi35SVJoS6DU_v-y2sDOsxnxdL2FxHe59HD2KjOJCJ9C34ZEr72zCxrKE4sys-MtTMr0aoYubb821qOs1XayGI96TkGOtFudwqLxl1krIC0RSYc65OepLb5XOQAAFZOaDxCCOBr5JwAz6fCaPSbn6KfBy4TiBp908OOueKRmGIdbqlMpLHj7x-spn5KfXTAEaFBc4cdfu6wIfhkY3_fUZt2VmEzAv9uwRa);
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+      <nav class="nav">
+        <div class="container nav-inner">
+          <a class="logo" href="index.html" style="margin-left: 11%;">
+            <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+            <span>Smart <span style="color: var(--primary); font-size: 25px;">DoorBell</span></span>
+          </a>
+          <div class="nav-links">
+            <a href="product.html">Product</a>
+            <a href="hardware-evolution.html">Hardware Evolution</a>
+            <a href="software-ecosystem.html">Software Evolution</a>
+            <a href="team.html">Team</a>
+            <a href="support.html">Support</a>
+          </div>
+          <div style="display: flex; gap: 10px; margin-right: 11%">
+            <a class="btn-order" href="buy.html">Order Now</a>
+            <a class="btn" href="app-download.html">Download App</a>
+          </div>
+        </div>
+      </nav>
+
+      <main class="flex-1 flex flex-col items-center py-10 px-4 md:px-10 lg:px-20 max-w-[1440px] mx-auto w-full">
+        <div class="w-full mb-8">
+          <h1 class="text-slate-900 dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-tight mb-2">
+            Order Your Hardware
+          </h1>
+          <p class="text-slate-500 dark:text-[#92b2c9] text-lg font-normal">
+            Complete your setup with our flagship IoT Smart Doorbell (v1.0).
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 w-full items-start">
+          <div class="lg:col-span-5 flex flex-col gap-8">
+            <div
+              class="rounded-xl overflow-hidden bg-white dark:bg-[#192833] shadow-xl border border-slate-200 dark:border-slate-800"
+            >
+              <div class="aspect-square w-full bg-[#0a1118] relative flex items-center justify-center p-8 group">
+                <div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent opacity-50"></div>
+                <img
+                  alt="Matte Black Smart Doorbell Unit"
+                  class="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Modern matte black smart doorbell high-end design"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuROs1S-LjUSQJb5Ma55bKC4UAkNAMh1s1mFWG2tfYHBvIFJe0q3VP7vkZ_84788jmslOBxRtK4LeXA4J4kSf-x9eYI4zuyWw5NEj1jQlQmPyGy9aDY4r6ZOFcL0-ucs895buPwf0oXUQgwOpBX4NkZ9vKk7_4TK8-SrZoX64iVw0Mw1u8YoAommrifktPRQ16JdvVkHW7J2tduXfxzEwsngig8zupK50bYMJUsg8lfQIu9Ckj9yE_wuzyWKWzU_yJKmS-fzunglV6"
+                />
+                <div
+                  class="absolute bottom-4 left-4 right-4 p-4 rounded-lg bg-black/40 backdrop-blur-md border border-white/10"
+                >
+                  <span class="text-primary text-xs font-bold tracking-widest uppercase mb-1 block">Hardware Only</span>
+                  <div class="flex justify-between items-end">
+                    <h3 class="text-white text-xl font-bold">Smart Doorbell (v1.0)</h3>
+                    <p class="text-white text-2xl font-black">Rs. 24,999</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6">
+                <h4 class="text-slate-900 dark:text-white text-lg font-bold mb-4 flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary">package_2</span>
+                  What's in the box
+                </h4>
+                <div class="grid grid-cols-1 gap-3">
+                  <div
+                    class="flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-[#111b22] border border-slate-100 dark:border-slate-800"
+                  >
+                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                    <p class="text-slate-700 dark:text-slate-300 text-sm font-medium">
+                      Smart Doorbell Unit (Matte Black)
+                    </p>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-[#111b22] border border-slate-100 dark:border-slate-800"
+                  >
+                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                    <p class="text-slate-700 dark:text-slate-300 text-sm font-medium">
+                      Heavy-duty Wall Mount Bracket
+                    </p>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-[#111b22] border border-slate-100 dark:border-slate-800"
+                  >
+                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                    <p class="text-slate-700 dark:text-slate-300 text-sm font-medium">
+                      Installation Hardware Kit
+                    </p>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-[#111b22] border border-slate-100 dark:border-slate-800"
+                  >
+                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                    <p class="text-slate-700 dark:text-slate-300 text-sm font-medium">
+                      Quick Start Guide &amp; Warranty Card
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 rounded-xl bg-primary/10 border border-primary/20">
+              <div class="flex gap-4">
+                <span class="material-symbols-outlined text-primary text-2xl">info</span>
+                <div>
+                  <h5 class="text-primary font-bold text-sm mb-1">Hardware Subscription</h5>
+                  <p class="text-slate-600 dark:text-[#92b2c9] text-xs leading-relaxed">
+                    This purchase is for the physical hardware unit only. Cloud recording and AI
+                    detection features (App Subscriptions) are managed separately within the
+                    SmartLink Mobile App after device setup.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="bg-white dark:bg-[#192833] rounded-xl p-8 border border-slate-200 dark:border-slate-800 shadow-xl">
+              <div class="mb-8 border-b border-slate-100 dark:border-slate-800 pb-6">
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Shipping Details</h2>
+                <p class="text-slate-500 dark:text-[#92b2c9] text-sm">
+                  Fill in your information to receive your unit within 3-5 business days.
+                </p>
+              </div>
+              <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold text-slate-700 dark:text-slate-200">Full Name</label>
+                    <input
+                      class="bg-slate-50 dark:bg-[#111b22] border border-slate-200 dark:border-[#325167] rounded-lg h-12 px-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600"
+                      placeholder="John Doe"
+                      type="text"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold text-slate-700 dark:text-slate-200">Phone Number</label>
+                    <input
+                      class="bg-slate-50 dark:bg-[#111b22] border border-slate-200 dark:border-[#325167] rounded-lg h-12 px-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600"
+                      placeholder="+92 3XX XXXXXXX"
+                      type="tel"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-sm font-bold text-slate-700 dark:text-slate-200">Delivery Address</label>
+                  <input
+                    class="bg-slate-50 dark:bg-[#111b22] border border-slate-200 dark:border-[#325167] rounded-lg h-12 px-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600"
+                    placeholder="House/Apartment #, Street, Block"
+                    type="text"
+                  />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold text-slate-700 dark:text-slate-200">City</label>
+                    <div class="relative">
+                      <select
+                        class="appearance-none w-full bg-slate-50 dark:bg-[#111b22] border border-slate-200 dark:border-[#325167] rounded-lg h-12 px-4 focus:ring-2 focus:ring-primary outline-none transition-all text-slate-900 dark:text-white"
+                      >
+                        <option disabled="" selected="" value="">Select your city</option>
+                        <option value="karachi">Karachi</option>
+                        <option value="lahore">Lahore</option>
+                        <option value="islamabad">Islamabad</option>
+                        <option value="rawalpindi">Rawalpindi</option>
+                        <option value="faisalabad">Faisalabad</option>
+                        <option value="multan">Multan</option>
+                        <option value="peshawar">Peshawar</option>
+                        <option value="quetta">Quetta</option>
+                      </select>
+                      <span
+                        class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500"
+                        >expand_more</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold text-slate-700 dark:text-slate-200">Area/Postal Code</label>
+                    <input
+                      class="bg-slate-50 dark:bg-[#111b22] border border-slate-200 dark:border-[#325167] rounded-lg h-12 px-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600"
+                      placeholder="XXXXX"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="border-t border-slate-100 dark:border-slate-800 pt-6">
+                  <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-bold text-slate-900 dark:text-white">Payment Proof</h2>
+                    <div
+                      class="flex items-center gap-1 px-2 py-1 rounded bg-green-500/10 text-green-500 text-[10px] font-bold uppercase tracking-wider border border-green-500/20"
+                    >
+                      <span class="material-symbols-outlined text-sm">lock</span>
+                      Secure Payment
+                    </div>
+                  </div>
+                  <p class="text-xs text-slate-500 dark:text-[#92b2c9] mb-4 italic">
+                    Please transfer Rs. 24,999 to IBAN: PK00BANK123456789 or JazzCash: 0300-1234567.
+                    Upload the screenshot below.
+                  </p>
+                  <div
+                    class="border-2 border-dashed border-slate-200 dark:border-[#325167] rounded-xl p-10 flex flex-col items-center justify-center bg-slate-50/50 dark:bg-[#111b22]/50 group hover:border-primary transition-colors cursor-pointer"
+                  >
+                    <span
+                      class="material-symbols-outlined text-4xl text-slate-400 dark:text-slate-600 group-hover:text-primary mb-3"
+                      >cloud_upload</span
+                    >
+                    <p class="text-slate-700 dark:text-slate-300 font-bold">Click to upload or drag and drop</p>
+                    <p class="text-slate-500 dark:text-slate-500 text-xs mt-1">PNG, JPG or PDF (max. 5MB)</p>
+                    <input class="hidden" type="file" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-4 mt-8">
+                  <div class="flex justify-between items-center">
+                    <span class="text-slate-600 dark:text-[#92b2c9]">Unit Price</span>
+                    <span class="font-medium text-slate-900 dark:text-white">Rs. 24,999</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-slate-600 dark:text-[#92b2c9]">Delivery Fee (Standard)</span>
+                    <span class="font-medium text-slate-900 dark:text-white">Rs. 500</span>
+                  </div>
+                  <div class="h-px bg-slate-100 dark:bg-slate-800 w-full"></div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-lg font-bold text-slate-900 dark:text-white">Total Amount</span>
+                    <span class="text-2xl font-black text-primary">Rs. 25,499</span>
+                  </div>
+                </div>
+                <button
+                  class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-lg shadow-xl shadow-primary/25 transition-all flex items-center justify-center gap-2 group"
+                  type="submit"
+                >
+                  Confirm &amp; Place Order
+                  <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                    >arrow_forward</span
+                  >
+                </button>
+                <p class="text-center text-[10px] text-slate-400 dark:text-slate-600">
+                  By clicking "Confirm &amp; Place Order", you agree to our Terms of Service and
+                  Privacy Policy. SmartLink IoT (v1.0) includes a 1-year limited warranty.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer" style="margin: 0% 8%;">
+        <div class="container">
+        <div class="footer-grid">
+            <div>
+            <div class="logo" style="margin-bottom: 10px;">
+                <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+                <span>Smart <span style="color: var(--primary); font-size: 15px;">DoorBell</span></span>
+            </div>
+            <p>Setting a new standard for home security with local infrastructure and premium engineering.</p>
+            </div>
+            <div>
+            <strong>Product</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="product.html">How it works</a>
+                <a href="buy.html">Product Pricing</a>
+                <a href="product.html">Subscriptions Pricing</a>
+                <a href="support.html">Installation guide</a>
+            </div>
+            </div>
+            <div>
+            <strong>Company</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="story.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="support.html">Contact</a>
+            </div>
+            </div>
+            <div>
+            <strong>Legal</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="privacy.html">Terms & Privacy</a>
+            </div>
+            </div>
+        </div>
+        <div style="text-align: end;">
+            <div>2026 © Smart DoorBell. All rights reserved.</div>
+        </div>
+        </div>
+    </footer>
+    </div>
+  </body>
+</html>

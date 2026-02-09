@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Azwar Rafiq | SmartBell PK Team</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1392ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101a22",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      body {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .circuit-bg {
+        background-image: radial-gradient(circle at 2px 2px, rgba(19, 146, 236, 0.05) 1px, transparent 0);
+        background-size: 32px 32px;
+      }
+      .glow-hover:hover {
+        box-shadow: 0 0 20px rgba(19, 146, 236, 0.3);
+      }
+    </style>
+  </head>
+  <body class="bg-background-dark text-white transition-colors duration-300">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden circuit-bg">
+      <nav class="nav">
+        <div class="container nav-inner">
+          <a class="logo" href="index.html" style="margin-left: 11%;">
+            <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+            <span>Smart <span style="color: var(--primary); font-size: 25px;">DoorBell</span></span>
+          </a>
+          <div class="nav-links">
+            <a href="product.html">Product</a>
+            <a href="hardware-evolution.html">Hardware Evolution</a>
+            <a href="software-ecosystem.html">Software Evolution</a>
+            <a href="team.html">Team</a>
+            <a href="support.html">Support</a>
+          </div>
+          <div style="display: flex; gap: 10px; margin-right: 11%">
+            <a class="btn-order" href="buy.html">Order Now</a>
+            <a class="btn" href="app-download.html">Download App</a>
+          </div>
+        </div>
+      </nav>
+
+      <main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-12 md:py-20">
+        <section class="flex flex-col md:flex-row gap-12 items-center mb-16">
+          <div class="relative group">
+            <div
+              class="absolute -inset-1 bg-primary/30 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"
+            ></div>
+            <div class="relative bg-[#1a2833] rounded-2xl p-2 border border-primary/20">
+              <div
+                class="w-64 h-80 md:w-80 md:h-[420px] rounded-xl overflow-hidden bg-cover bg-center"
+                style="background-image: url('assets/Azwar.jpeg');"
+              ></div>
+              <div
+                class="absolute -bottom-4 -right-4 bg-[#1a2833] border border-primary/40 p-4 rounded-xl shadow-2xl flex items-center gap-3"
+              >
+                <div class="p-2 bg-primary/20 rounded-lg">
+                  <span class="material-symbols-outlined text-primary text-2xl">verified_user</span>
+                </div>
+                <div>
+                  <p class="text-[10px] text-primary font-bold uppercase tracking-[0.2em] leading-none mb-1">
+                    Core Team
+                  </p>
+                  <p class="text-xs font-bold text-white">Contributor ID: PK-003</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 text-center md:text-left mt-8 md:mt-0">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6"
+            >
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              </span>
+              Mobile Contributor
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tighter">Azwar Rafiq</h1>
+            <p class="text-xl md:text-2xl text-primary font-medium mb-6">App &amp; Documentation</p>
+            <p class="text-lg text-slate-400 max-w-xl leading-relaxed mb-8">
+              Delivers app features and clear documentation for setup and troubleshooting. Focused on
+              usability, onboarding, and release notes that keep users informed.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+              <a
+                class="flex items-center gap-2 px-6 py-3 bg-[#0077b5] text-white rounded-lg font-bold hover:scale-105 transition-transform"
+                href="https://www.linkedin.com/in/muhammad-azwar-rafiq-4600492b1" target="_blank"
+              >
+                <span class="material-symbols-outlined text-xl text-white">link</span>
+                LinkedIn
+              </a>
+              <a
+                class="flex items-center gap-2 px-6 py-3 bg-[#24292e] text-white rounded-lg font-bold hover:scale-105 transition-transform"
+                href="https://github.com/khanazwar70-gif" target="_blank"
+              >
+                <span class="material-symbols-outlined text-xl text-white">terminal</span>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-24">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+            <div class="flex items-center gap-4">
+              <span class="material-symbols-outlined text-primary text-4xl">hub</span>
+              <div>
+                <h2 class="text-3xl font-bold tracking-tight">Unified Contribution</h2>
+                <p class="text-slate-400">App delivery paired with documentation for smooth adoption.</p>
+              </div>
+            </div>
+            <a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" href="team.html">
+              View Team Collaboration Page
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#1a2833]/50 border border-primary/10 rounded-3xl p-8 lg:p-12"
+          >
+            <div class="lg:col-span-7 relative">
+              <div class="contribution-marquee">
+                <div class="contribution-track reverse">
+                  <div
+                    class="contribution-item p-6 rounded-2xl bg-[#101a22] border-2 border-primary shadow-[0_0_15px_rgba(19,146,236,0.2)] flex flex-col items-center text-center"
+                  >
+                    <span class="material-symbols-outlined text-primary text-3xl mb-2">smartphone</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary">App</span>
+                    <span class="text-[10px] text-slate-400 mt-1">Contributor</span>
+                  </div>
+                  <div
+                    class="contribution-item p-6 rounded-2xl bg-[#101a22] border border-primary/10 flex flex-col items-center text-center"
+                  >
+                    <span class="material-symbols-outlined text-primary/80 text-3xl mb-2">description</span>
+                    <span class="text-xs font-bold uppercase tracking-wider">Docs</span>
+                    <span class="text-[10px] text-slate-400 mt-1">Owner</span>
+                  </div>
+                  <div
+                    class="contribution-item p-6 rounded-2xl bg-[#101a22] border border-primary/30 flex flex-col items-center text-center"
+                  >
+                    <span class="material-symbols-outlined text-primary text-3xl mb-2">notifications_active</span>
+                    <span class="text-xs font-bold uppercase tracking-wider">Onboarding</span>
+                    <span class="text-[10px] text-slate-400 mt-1">Flow</span>
+                  </div>
+                  <div
+                    class="contribution-item p-6 rounded-2xl bg-[#101a22] border border-primary/10 flex flex-col items-center text-center opacity-70"
+                  >
+                    <span class="material-symbols-outlined text-primary/60 text-3xl mb-2">support_agent</span>
+                    <span class="text-xs font-bold uppercase tracking-wider">Support</span>
+                    <span class="text-[10px] text-slate-400 mt-1">Guides</span>
+                  </div>
+                  <div
+                    class="contribution-item p-6 rounded-2xl bg-[#101a22] border-2 border-primary shadow-[0_0_15px_rgba(19,146,236,0.2)] flex flex-col items-center text-center"
+                  >
+                    <span class="material-symbols-outlined text-primary text-3xl mb-2">smartphone</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-primary">App</span>
+                    <span class="text-[10px] text-slate-400 mt-1">Contributor</span>
+                  </div>
+                  <div
+                    class="contribution-item p-6 rounded-2xl bg-[#101a22] border border-primary/10 flex flex-col items-center text-center"
+                  >
+                    <span class="material-symbols-outlined text-primary/80 text-3xl mb-2">description</span>
+                    <span class="text-xs font-bold uppercase tracking-wider">Docs</span>
+                    <span class="text-[10px] text-slate-400 mt-1">Owner</span>
+                  </div>
+                  <div
+                    class="contribution-item p-6 rounded-2xl bg-[#101a22] border border-primary/30 flex flex-col items-center text-center"
+                  >
+                    <span class="material-symbols-outlined text-primary text-3xl mb-2">notifications_active</span>
+                    <span class="text-xs font-bold uppercase tracking-wider">Onboarding</span>
+                    <span class="text-[10px] text-slate-400 mt-1">Flow</span>
+                  </div>
+                  <div
+                    class="contribution-item p-6 rounded-2xl bg-[#101a22] border border-primary/10 flex flex-col items-center text-center opacity-70"
+                  >
+                    <span class="material-symbols-outlined text-primary/60 text-3xl mb-2">support_agent</span>
+                    <span class="text-xs font-bold uppercase tracking-wider">Support</span>
+                    <span class="text-[10px] text-slate-400 mt-1">Guides</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-5 space-y-6">
+              <div class="p-6 bg-primary/10 rounded-2xl border border-primary/20">
+                <h4 class="text-lg font-bold mb-3 flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary">analytics</span>
+                  Project Involvement
+                </h4>
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-1">
+                      <span>App Features</span>
+                      <span class="text-primary">86%</span>
+                    </div>
+                    <div class="h-1.5 w-full bg-slate-700 rounded-full overflow-hidden">
+                      <div class="h-full bg-primary" style="width: 86%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-1">
+                      <span>Documentation</span>
+                      <span class="text-primary">91%</span>
+                    </div>
+                    <div class="h-1.5 w-full bg-slate-700 rounded-full overflow-hidden">
+                      <div class="h-full bg-primary/60" style="width: 91%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-slate-400 text-sm leading-relaxed italic">
+                "Azwar kept the app updates aligned with easy-to-follow documentation."
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div class="lg:col-span-2 space-y-12">
+            <section>
+              <div class="flex items-center gap-4 mb-6">
+                <span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+                <h2 class="text-3xl font-bold tracking-tight">Role in Project</h2>
+              </div>
+              <div class="p-8 bg-[#1a2833] rounded-2xl border border-primary/10 shadow-sm">
+                <p class="text-slate-300 text-lg leading-relaxed">
+                  Builds app features with a focus on clarity and onboarding. Azwar maintains release
+                  notes, help guides, and setup documentation that support smooth customer activation.
+                </p>
+              </div>
+            </section>
+            <section>
+              <div class="flex items-center gap-4 mb-6">
+                <span class="material-symbols-outlined text-primary text-3xl">verified</span>
+                <h2 class="text-3xl font-bold tracking-tight">Core Contributions</h2>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-[#1a2833] rounded-xl border border-primary/10 glow-hover transition-all">
+                  <span class="material-symbols-outlined text-primary mb-4 text-3xl">smartphone</span>
+                  <h3 class="text-xl font-bold mb-2">App Features</h3>
+                  <p class="text-slate-400">Implemented alerts, setup flows, and user settings.</p>
+                </div>
+                <div class="p-6 bg-[#1a2833] rounded-xl border border-primary/10 glow-hover transition-all">
+                  <span class="material-symbols-outlined text-primary mb-4 text-3xl">description</span>
+                  <h3 class="text-xl font-bold mb-2">Documentation</h3>
+                  <p class="text-slate-400">Created setup guides and troubleshooting steps.</p>
+                </div>
+                <div class="p-6 bg-[#1a2833] rounded-xl border border-primary/10 glow-hover transition-all">
+                  <span class="material-symbols-outlined text-primary mb-4 text-3xl">campaign</span>
+                  <h3 class="text-xl font-bold mb-2">Release Notes</h3>
+                  <p class="text-slate-400">Maintained clear updates and feature summaries.</p>
+                </div>
+                <div class="p-6 bg-[#1a2833] rounded-xl border border-primary/10 glow-hover transition-all">
+                  <span class="material-symbols-outlined text-primary mb-4 text-3xl">support_agent</span>
+                  <h3 class="text-xl font-bold mb-2">Support Content</h3>
+                  <p class="text-slate-400">Crafted FAQs and onboarding checklists.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="space-y-12">
+            <section>
+              <div class="flex items-center gap-4 mb-6">
+                <span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+                <h2 class="text-3xl font-bold tracking-tight">Tech Stack</h2>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="flex flex-col items-center justify-center p-6 bg-[#1a2833] rounded-xl border border-primary/10"
+                >
+                  <div class="w-12 h-12 mb-3 bg-[#233948] rounded-lg flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary">flutter_dash</span>
+                  </div>
+                  <span class="text-sm font-bold">Flutter</span>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center p-6 bg-[#1a2833] rounded-xl border border-primary/10"
+                >
+                  <div class="w-12 h-12 mb-3 bg-[#233948] rounded-lg flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary">text_snippet</span>
+                  </div>
+                  <span class="text-sm font-bold">Docs</span>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center p-6 bg-[#1a2833] rounded-xl border border-primary/10"
+                >
+                  <div class="w-12 h-12 mb-3 bg-[#233948] rounded-lg flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary">bug_report</span>
+                  </div>
+                  <span class="text-sm font-bold">QA</span>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center p-6 bg-[#1a2833] rounded-xl border border-primary/10"
+                >
+                  <div class="w-12 h-12 mb-3 bg-[#233948] rounded-lg flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary">task</span>
+                  </div>
+                  <span class="text-sm font-bold">Release</span>
+                </div>
+              </div>
+            </section>
+            <section class="p-8 bg-primary rounded-3xl text-white relative overflow-hidden">
+              <div class="relative z-10">
+                <h3 class="text-xl font-bold mb-6">Impact Score</h3>
+                <div class="space-y-6">
+                  <div>
+                    <div class="flex justify-between text-sm mb-2 font-bold uppercase tracking-widest">
+                      <span>App Quality</span>
+                      <span>88%</span>
+                    </div>
+                    <div class="w-full bg-white/20 rounded-full h-2">
+                      <div class="bg-white h-2 rounded-full" style="width: 88%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-sm mb-2 font-bold uppercase tracking-widest">
+                      <span>Support Clarity</span>
+                      <span>92%</span>
+                    </div>
+                    <div class="w-full bg-white/20 rounded-full h-2">
+                      <div class="bg-white h-2 rounded-full" style="width: 92%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer" style="margin: 0% 8%;">
+        <div class="container">
+        <div class="footer-grid">
+            <div>
+            <div class="logo" style="margin-bottom: 10px;">
+                <img src="assets/ICON.jpg" alt="logo" class="w-8 h-8 rounded-full">
+                <span>Smart <span style="color: var(--primary); font-size: 15px;">DoorBell</span></span>
+            </div>
+            <p>Setting a new standard for home security with local infrastructure and premium engineering.</p>
+            </div>
+            <div>
+            <strong>Product</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="product.html">How it works</a>
+                <a href="buy.html">Product Pricing</a>
+                <a href="product.html">Subscriptions Pricing</a>
+                <a href="support.html">Installation guide</a>
+            </div>
+            </div>
+            <div>
+            <strong>Company</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="story.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="support.html">Contact</a>
+            </div>
+            </div>
+            <div>
+            <strong>Legal</strong>
+            <div style="display: grid; gap: 8px; margin-top: 10px;">
+                <a href="privacy.html">Terms & Privacy</a>
+            </div>
+            </div>
+        </div>
+        <div style="text-align: end;">
+            <div>2026 © Smart DoorBell. All rights reserved.</div>
+        </div>
+        </div>
+    </footer>
+    </div>
+  </body>
+</html>
