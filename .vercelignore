@@ -1,0 +1,2 @@
+# Exclude large APK from Vercel deploys (served via direct download link)
+apk/app-release.apk
